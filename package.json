@@ -14,5 +14,7 @@
     "node-fetch": "^2.6.1",
     "puppeteer": "^5.5.0"
   },
-  "devDependencies": {}
+    "devDependencies": {
+    "jest": "^26.6.3"
+  }
 }
