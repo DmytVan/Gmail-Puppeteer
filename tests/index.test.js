@@ -1,6 +1,5 @@
 const NYTimes = require('../src/NYTimes');
 const puppeteer = require('puppeteer');
-const assert = require('assert');
 const GmailPuppeteerHandler = require('../src/GmailPuppeteerHandler');
 const {email, password, NYApiKey} = require('../src/data');
 
@@ -27,23 +26,6 @@ test('check message', async () => {
 });
 
 
-// it('1', async function() {
-//     console.log(result);
-//     assert.equal(result, 'https://mail.google.com/mail/u/0/#inbox');
-// })
-//
-// it('2', async function () {
-//     const id = String(+new Date());
-//     const messageText = await getMessage();
-//     console.log(await getGmailPuppeteer.sendMessage(email, id, messageText));
-//     const messageInfo = await getGmailPuppeteer.getMessageById(id);
-//     console.log(messageText === messageInfo.message);
-//     assert.equal(1,1);
-// });
-//
-//
-//
-//
 async function getPuppeteer() {
     if (gmailPuppeteer) return gmailPuppeteer;
     const browser = await puppeteer.launch({headless: false});
